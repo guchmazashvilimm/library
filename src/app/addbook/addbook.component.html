@@ -1,0 +1,48 @@
+<app-header></app-header>
+<form #bookForm="ngForm" (ngSubmit)="onSubmit(bookForm)" class="mt-3">
+  <div class="mb-3">
+    <label for="title" class="form-label">Book Title</label>
+    <input type="text" class="form-control" id="title" name="title" placeholder="Title" ngModel #title="ngModel"
+      required />
+    <span *ngIf="isTitleInBooks(bookForm)" style="color: red;"> Book title already used</span>
+    <span *ngIf="title.touched && title.invalid" class="error">Please enter blog title</span>
+  </div>
+
+
+  <div class="mb-3">
+    <label for="description" class="form-label">description</label>
+    <textarea class="form-control" id="description" name="description" placeholder="description" ngModel
+      #description="ngModel" required></textarea>
+    <span *ngIf="description.touched && description.invalid" class="error">Please enter book description</span>
+  </div>
+
+
+
+  <div class="mb-3">
+    <label for="publishYear" class="form-label">Publish Year</label>
+    <input type="text" class="form-control" id="publishYear" name="publishYear" placeholder="Publish Year" ngModel
+      #publishYear="ngModel" required />
+    <span *ngIf="publishYear.touched && publishYear.invalid" class="error">Please enter book publish year</span>
+  </div>
+
+
+
+  <div class="mb-3">
+    <label for="author" class="form-label">Author</label>
+    <input type="text" class="form-control" id="author" name="author" placeholder="Author" ngModel #author="ngModel"
+      required />
+    <span *ngIf="author.touched && author.invalid" class="error">Please enter book author</span>
+  </div>
+
+  <div class="mb-3">
+    <label for="imageUrl" class="form-label">Image Url</label>
+    <input type="text" class="form-control" id="imageUrl" name="imageUrl" placeholder="Image Url" ngModel
+      #imageUrl="ngModel" required />
+    <span *ngIf="imageUrl.touched && imageUrl.invalid" class="error">Please enter book image url</span>
+  </div>
+
+
+  <button [disabled]="isTitleInBooks(bookForm) || bookForm.invalid" type="submit" class="btn btn-primary mb-3">
+    Submit
+  </button>
+</form>

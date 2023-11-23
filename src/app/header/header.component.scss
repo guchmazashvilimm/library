@@ -1,0 +1,43 @@
+nav {
+  background-color: #2B2A4C;
+  padding: 10px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(224, 215, 215);
+  font-size: 2rem;
+  cursor: pointer;
+  font-family: "circular";
+}
+a:hover {
+  color: white;
+}
+
+form{
+  align-self: center;
+  justify-self: center;
+}
+input{
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  ul {
+    flex-direction: column;
+  }
+}
+

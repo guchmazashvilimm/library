@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "War And Peace",
+    "description": "War and Peace is a literary work by Russian author Leo Tolstoy...",
+    "publishYear": "1867",
+    "author": "Lev Tolstoy",
+    "imageUrl": "https://cdn.penguin.co.uk/dam-assets/books/9781849908467/9781849908467-jacket-large.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Vepkhistkaosani",
+    "description": "Vepkhistkaosani is a Georgian medieval epic poem, written in the 12th or 13th century...",
+    "publishYear": "1180–1205/07",
+    "author": "Shota Rustaveli",
+    "imageUrl": "https://booksale.ge/uploads/books/1534937122.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Don Quixote",
+    "description": "Don Quixote[a][b][c] is a Spanish epic novel by Miguel de Cervantes...",
+    "publishYear": "1605",
+    "author": "Miguel de Cervantes",
+    "imageUrl": "https://m.media-amazon.com/images/I/411WFSFEMJL._AC_UF1000,1000_QL80_.jpg"
+  }
+]

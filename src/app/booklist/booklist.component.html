@@ -1,0 +1,18 @@
+<app-header (changeSearch)="searchBooks($event)"></app-header>
+
+<div id="main-container" class="div">
+  <div *ngFor="let book of books">
+    <li *ngIf="book">
+      <h3>{{book.title}}</h3>
+    </li>
+    <img *ngIf="book" [src]="book.imageUrl" alt="" width="250" height="400" [routerLink]="['/book', book.id]">
+    <div *ngIf="book">
+      <button class="details"><a [routerLink]="['/book', book.id]" class="btn ">details</a></button>
+      <button (click)="openModel('delete', book)" class="btn  delete">delete</button>
+    </div>
+  </div>
+</div>
+
+
+<app-deletemodal [delBook]="delBook" (deleteSelected)="deleteBook($event)"></app-deletemodal>
+

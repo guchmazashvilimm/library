@@ -1,0 +1,16 @@
+<nav>
+  <div>
+    <div>
+      <ul>
+        <li><a class="active" routerLink="/">Home</a></li>
+        <li><a routerLink="/addBook">Add Book</a></li>
+        <li *ngIf="!isBlogRoute()">
+          <form>
+            <input type="search" (ngModelChange)="searchBooks(key.value)" #key="ngModel" ngModel name="key"
+              id="searchName" class="form-control" placeholder="Search title or author" required />
+          </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

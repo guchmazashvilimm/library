@@ -1,0 +1,109 @@
+.card {
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 50%;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card-top {
+  width: 100%;
+  display: flex;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Wellfleet;
+}
+.title {
+  margin-right: auto;
+  font-size: 1.7rem;
+}
+
+.title-text {
+  font-size: 1.2rem;
+}
+
+.author {
+  margin-left: auto;
+  align-self: center;
+  font-size: 1.2rem;
+}
+
+.static-text {
+  font-size: 1.5rem;
+}
+.card-text {
+  margin-bottom: 20px;
+  font-family: "GFS Neohellenic", sans-serif;
+  justify-self: start;
+  align-self: flex-start;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background-color: #f8f9fa;
+}
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.title {
+  display: flex;
+  align-items: center;
+}
+.home{
+  color: white !important;
+  text-decoration: none;
+  font-size: larger;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  padding-inline: 10px;
+  font-family: circular;
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+.title strong {
+  margin-right: 5px;
+}
+.author {
+  font-style: italic;
+}
+.card-body p {
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+
+.btn-dark {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background-color: #23272b;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 100% !important;
+  }
+}

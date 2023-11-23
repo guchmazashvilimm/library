@@ -1,0 +1,24 @@
+<app-header></app-header>
+
+<div class="main">
+  <div class="card w-50">
+    <div class="card-body">
+      <img [src]="book.imageUrl" alt="" width="200" height="300">
+      <div class="card-top">
+        <div class="title">
+          <strong>Title <br></strong>
+          <span class="title-text">{{ book.title }}</span>
+        </div>
+        <span class="author"><i class="fa-solid fa-user"></i> {{ book.author }}</span>
+      </div>
+      <p style="align-self: flex-start;"><strong>Publish Year<br></strong> {{book.publishYear}}</p>
+
+      <p class="card-text">
+        <strong class="static-text">Description <br></strong> {{ book.description }}
+      </p>
+      <div class="actions">
+        <a routerLink="/" class="btn btn-dark home">Home</a>
+      </div>
+    </div>
+  </div>
+</div>

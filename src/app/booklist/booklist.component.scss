@@ -1,0 +1,38 @@
+li{
+  list-style: none;
+}
+
+.div{
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.details a{
+  color: white;
+  text-decoration: none;
+}
+.details{
+  color: white !important;
+  font-size: larger;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  padding-inline: 10px;
+  font-family: circular;
+  background-color: #A2C579 !important;
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+.delete{
+  background-color: #C63D2F;
+  cursor: pointer;
+  color: white !important;
+  font-size: larger;
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  padding-inline: 10px;
+  font-family: circular;
+}
